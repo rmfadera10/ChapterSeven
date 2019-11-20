@@ -2,6 +2,7 @@ package com.letstravel.chapterseven;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -27,6 +28,9 @@ Button btnAddWord;
             @Override
             public void onClick(View v) {
                 Save();
+
+                Intent intent=new Intent(AddWords.this, MainActivity.class);
+                startActivity(intent);
             }
         });
     }
